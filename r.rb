@@ -1,6 +1,5 @@
 #
-# Author:: Steven Danna <steve@opscode.com>
-# Copyright:: Copyright (c) 2011 Opscode, Inc
+# Copyright:: Copyright (c) 2011 Steven Danna <steve@opscode.com>
 # License:: Apache License, Version 2.0
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
