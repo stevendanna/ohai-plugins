@@ -41,8 +41,8 @@ end
 
 unless etc
   etc Mash.new
-  etc[:passwd] = Hash.new
-  etc[:group] = Hash.new
+  etc[:passwd] = Mash.new
+  etc[:group] = Mash.new
 
   File.open("/etc/passwd", "r") do |f|
     f.each_line do |line|
