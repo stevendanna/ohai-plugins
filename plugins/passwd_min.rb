@@ -1,3 +1,4 @@
+Ohai.plugin(:Passwdmin) do
 provides 'etc', 'current_user'
 
 require 'etc'
@@ -39,6 +40,7 @@ def fix_encoding(str)
   str
 end
 
+collect_data(:linux) do
 unless etc
   etc Mash.new
   etc[:passwd] = Mash.new
@@ -59,4 +61,6 @@ end
 
 unless current_user
   current_user fix_encoding(Etc.getlogin)
+end
+end
 end
